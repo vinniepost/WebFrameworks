@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oef6</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="field">
+        <label class="label">Selecteer een automerk:</label>
+        <div class="control">
+          <div class="select">
+            <select name="Car" id="car" onchange="handleCarChange()">
+              <option value=""></option>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="mercedes">Mercedes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Selecteer een kleur:</label>
+        <div class="control">
+          <div class="select">
+            <select name="colour" id="color" onchange="handleColorChange()">
+              <option value=""></option>
+              <option value="red">Rood</option>
+              <option value="blue">Blauw</option>
+              <option value="green">Groen</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <p id="note" class="notification is-primary" style="display: none"></p>
+    </div>
+  </body>
+</html>

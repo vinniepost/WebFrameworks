@@ -7,5 +7,5 @@ npm install http-server
 running the server:
 
 ```bash
-npx http-server .
+npx http-server oef1/
 ```
