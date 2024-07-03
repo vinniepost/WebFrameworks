@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>Locatie</th>
+        <th>Temperatuur (°C)</th>
+        <th>Voorspelling</th>
+        <th>Afbeelding</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of weatherData">
+        <td>{{ data.location }}</td>
+        <td>{{ data.temperature }}</td>
+        <td>{{ data.forecast }}</td>
+        <td><img [src]="data.imageUrl" alt="weather icon"></td>
+      </tr>
+    </tbody>
+  </table>
